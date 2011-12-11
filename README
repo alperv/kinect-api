@@ -1,1 +1,23 @@
 This will be a RESTful API for accepting and servering kinect images. Also will serve as an annotation server.
+
+INSTALLATION
+
+You need Django, piston and Python Image Library
+
+sudo easy_install django
+sudo easy_install piston
+sudo easy_install PIL
+
+HOW TO RUN
+
+Then start the server with:
+
+python ./manage.py runserver
+
+and post an image using the script postimage.sh under httpscripts
+
+./postimage.sh
+
+If all went well, you should have a new image under /tmp/.
+If not check the response page lala.html in the httpscripts directory for hints on the error.
+

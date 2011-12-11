@@ -17,5 +17,5 @@ class BlogpostHandler(BaseHandler):
           data = request.data
       name = request.FILES["image"].name
       image = Image.open(request.FILES["image"])
-      image.save('/Users/aydemir/tmp/' + name)
-      rc.ALL_OK
+      image.save('/tmp/' + name)
+      return rc.ALL_OK
